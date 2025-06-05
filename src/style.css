@@ -43,7 +43,7 @@ body {
   height: 100vh;
   position: relative;
   transform: scale(1.25);
-  background-image: url("https://www.rockstargames.com/VI/_next/static/media/VIstack.fe9b0515.svg");
+  background-image: url("/public/logo_white.svg");
   background-size: 1000vh;
   background-position: 50% 41.7%;
   background-repeat: no-repeat;
