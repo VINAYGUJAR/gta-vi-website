@@ -3,14 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GTA VI Website</title>
+    <title>GTA VI - Coming 2026</title>
     <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <!-- Animated particles background -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Glitch effect overlay -->
+    <div class="glitch-overlay"></div>
+    
     <div class="container">
       <div class="overlay"></div>
+      
+      <!-- Hero Section 1 -->
       <div class="hero-1-container">
         <div class="hero-main-container">
+          <div class="neon-border"></div>
           <img
             class="hero-main-logo"
             draggable="false"
@@ -21,32 +33,204 @@
             class="hero-main-image"
             draggable="false"
             src="/gta_hero.webp"
-            alt="gta logo"
+            alt="gta hero"
           />
+          <div class="holographic-overlay"></div>
         </div>
         <div class="hero-text-logo-container">
           <div class="hero-text-logo"></div>
-          <div>
-            <h3 class="hero-text">
-              Coming<br />
-              May 26<br />
-              2026
-            </h3>
+          <div class="release-date-container">
+            <div class="glitch-text">
+              <h3 class="hero-text" data-text="Coming May 26 2026">
+                Coming<br />
+                May 26<br />
+                2026
+              </h3>
+            </div>
+            <div class="countdown-timer">
+              <div class="timer-segment">
+                <span class="timer-number" id="days">000</span>
+                <span class="timer-label">Days</span>
+              </div>
+              <div class="timer-segment">
+                <span class="timer-number" id="hours">00</span>
+                <span class="timer-label">Hours</span>
+              </div>
+              <div class="timer-segment">
+                <span class="timer-number" id="minutes">00</span>
+                <span class="timer-label">Minutes</span>
+              </div>
+              <div class="timer-segment">
+                <span class="timer-number" id="seconds">00</span>
+                <span class="timer-label">Seconds</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Hero Section 2 -->
       <div class="hero-2-container">
-        <h3>Vice City, USA.</h3>
-        <p>
+        <div class="location-badge">
+          <span class="location-icon">📍</span>
+          <span>Vice City, USA</span>
+        </div>
+        <h3 class="section-title">The Story Begins</h3>
+        <p class="story-text">
           Jason and Lucia have always known the deck is stacked against them.
           But when an easy score goes wrong, they find themselves on the darkest
           side of the sunniest place in America, in the middle of a criminal
           conspiracy stretching across the state of Leonida — forced to rely on
           each other more than ever if they want to make it out alive.
         </p>
+        <div class="story-features">
+          <div class="feature-card">
+            <div class="feature-icon">🏖️</div>
+            <h4>Vice City</h4>
+            <p>Return to the neon-soaked streets of Vice City</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">👥</div>
+            <h4>Dual Protagonists</h4>
+            <p>Play as both Jason and Lucia</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌴</div>
+            <h4>State of Leonida</h4>
+            <p>Explore the entire state of Leonida</p>
+          </div>
+        </div>
       </div>
+
+      <!-- Hero Section 3 - Characters -->
+      <div class="hero-3-container">
+        <h3 class="section-title">Meet the Characters</h3>
+        <div class="character-grid">
+          <div class="character-card">
+            <div class="character-image jason-bg">  <div class="character-image">
+              <img src="/jason-action.png" alt="Jason" class="character-img"></div></div>
+            <div class="character-info">
+              <h4 class="character-name">Jason</h4>
+              <p class="character-desc">A skilled criminal with a troubled past, Jason navigates the dangerous underworld of Vice City.</p>
+              <div class="character-stats">
+                <div class="stat">
+                  <span class="stat-label">Skills</span>
+                  <div class="stat-bar">
+                    <div class="stat-fill" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Loyalty</span>
+                  <div class="stat-bar">
+                    <div class="stat-fill" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="character-card">
+            <div class="character-image lucia-bg">
+              <div class="character-image">
+                <img src="/lucia-action.png" alt="Lucia" class="character-img">
+              </div>
+            </div>
+            <div class="character-info">
+              <h4 class="character-name">Lucia</h4>
+              <p class="character-desc">Smart and resourceful, Lucia brings strategy and determination to every heist.</p>
+              <div class="character-stats">
+                <div class="stat">
+                  <span class="stat-label">Intelligence</span>
+                  <div class="stat-bar">
+                    <div class="stat-fill" style="width: 95%"></div>
+                  </div>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Stealth</span>
+                  <div class="stat-bar">
+                    <div class="stat-fill" style="width: 88%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Section 4 - Features -->
+      <div class="hero-4-container">
+        <h3 class="section-title">Game Features</h3>
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-number">01</div>
+            <h4>Next-Gen Graphics</h4>
+            <p>Experience Vice City like never before with stunning ray-traced visuals and dynamic weather systems.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-number">02</div>
+            <h4>Co-op Gameplay</h4>
+            <p>Team up with friends in seamless cooperative missions and heists across the state of Leonida.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-number">03</div>
+            <h4>Living World</h4>
+            <p>Immerse yourself in a breathing city with realistic AI, dynamic events, and endless possibilities.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-number">04</div>
+            <h4>Customization</h4>
+            <p>Personalize your characters, vehicles, and properties with unprecedented depth and detail.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Section 5 - Pre-order -->
+      <div class="hero-5-container">
+        <div class="pre-order-content">
+          <h3 class="section-title">Pre-Order Now</h3>
+          <p class="pre-order-desc">Be among the first to experience the next chapter of Grand Theft Auto</p>
+          <div class="edition-cards">
+            <div class="edition-card standard">
+              <h4>Standard Edition</h4>
+              <div class="price">$69.99</div>
+              <ul class="edition-features">
+                <li>Base Game</li>
+                <li>In-Game Soundtrack</li>
+                <li>Digital Manual</li>
+              </ul>
+              <button class="pre-order-btn">Pre-Order</button>
+            </div>
+            <div class="edition-card deluxe">
+              <div class="popular-badge">Most Popular</div>
+              <h4>Deluxe Edition</h4>
+              <div class="price">$99.99</div>
+              <ul class="edition-features">
+                <li>Base Game</li>
+                <li>Season Pass</li>
+                <li>Exclusive Vehicles</li>
+                <li>Bonus Cash</li>
+                <li>Soundtrack</li>
+              </ul>
+              <button class="pre-order-btn">Pre-Order</button>
+            </div>
+            <div class="edition-card ultimate">
+              <h4>Ultimate Edition</h4>
+              <div class="price">$129.99</div>
+              <ul class="edition-features">
+                <li>Everything in Deluxe</li>
+                <li>Steelbook Case</li>
+                <li>Art Book</li>
+                <li>Exclusive DLC</li>
+                <li>Vice City Map</li>
+              </ul>
+              <button class="pre-order-btn">Pre-Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Scroll Indicator -->
       <div class="scroll-indicator">
+        <div class="scroll-text">Scroll to Explore</div>
         <svg
           width="34"
           height="14"
@@ -54,7 +238,7 @@
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
-          class="_1smfa210"
+          class="scroll-arrow"
           focusable="false"
         >
           <path
@@ -66,8 +250,14 @@
         </svg>
       </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="./src/script.js"></script>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script type="module" src="./src/script.js"></script>
 </html>
+
+
+
+
+
