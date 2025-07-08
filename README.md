@@ -1,9 +1,36 @@
-# GTA VI - Landing page
+## GTA VI Website Workshop
 
-Welcome!
+Welcome to the GTA VI Website Workshop project! This project is a modern, responsive website inspired by the upcoming Grand Theft Auto VI game. It is built using HTML, CSS, and JavaScript, and uses Vite for fast development and build tooling.
 
-Disclaimer: This project is a fan-made clone of the official Grand Theft Auto VI website. I am not affiliated with Rockstar Games, Take-Two Interactive, or any of their subsidiaries. All images and content used in this project are the property of Rockstar Games and were sourced from https://www.rockstargames.com/VI. This project is for educational and non-commercial purposes only.
+### Features
+- Hero section with GTA VI themed images and logos
+- Responsive design for desktop and mobile
+- Interactive elements powered by JavaScript
+- Easy to customize assets in the `public/` folder
 
-# Deploy
+### Getting Started
+1. **Install dependencies**
+   ```powershell
+   npm install
+   ```
+2. **Start the development server**
+   ```powershell
+   npm run dev
+   ```
+3. Open your browser and go to `http://localhost:5173` (or the port shown in your terminal).
 
-If you want to check the deployment of this application, access this link: https://sergio-gta-website.netlify.app/
+### Project Structure
+- `index.html` – Main HTML file
+- `src/style.css` – Main stylesheet
+- `src/script.js` – Main JavaScript file
+- `public/` – Static assets (images, logos)
+
+### Building for Production
+To build the site for production, run:
+```powershell
+npm run build
+```
+The output will be in the `dist/` folder.
+
+### License
+This project is for educational and workshop purposes only. All GTA-related assets are property of Rockstar Games.
